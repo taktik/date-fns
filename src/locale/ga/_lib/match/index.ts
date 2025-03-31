@@ -88,7 +88,7 @@ const parseDayPeriodPatterns = {
     },
 };
 
-const match: Match = {
+export const match: Match = {
     ordinalNumber: buildMatchPatternFn({
         matchPattern: matchOrdinalNumberPattern,
         parsePattern: parseOrdinalNumberPattern,
@@ -132,4 +132,3 @@ const match: Match = {
     }),
 };
 
-export default match;

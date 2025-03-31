@@ -20,7 +20,7 @@ const dateTimeFormats = {
     full: '{{date}}, {{time}}',
 };
 
-const formatLong: FormatLong = {
+export const formatLong: FormatLong = {
     date: buildFormatLongFn({
         formats: dateFormats,
         defaultWidth: 'full',
@@ -37,4 +37,3 @@ const formatLong: FormatLong = {
     }),
 };
 
-export default formatLong;

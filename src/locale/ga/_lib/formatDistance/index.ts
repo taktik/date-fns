@@ -20,7 +20,7 @@ const formatDistanceLocale: FormatDistanceLocale<string> = {
     almostXYears: 'beagnach {{count}} bhliain',
 };
 
-const formatDistance: FormatDistanceFn = (token, count, options) =>
+export const formatDistance: FormatDistanceFn = (token, count, options) =>
 {
     const result = formatDistanceLocale[token].replace('{{count}}', count.toString());
     if (options?.addSuffix) {
@@ -34,4 +34,3 @@ const formatDistance: FormatDistanceFn = (token, count, options) =>
     return result;
 };
 
-export default formatDistance;

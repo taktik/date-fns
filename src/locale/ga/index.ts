@@ -1,9 +1,9 @@
 import type { Locale } from "../types.js";
-import formatDistance from './_lib/formatDistance/index.js';
-import formatRelative from './_lib/formatRelative/index.js';
-import localize from './_lib/localize/index.js';
-import match from './_lib/match/index.js';
-import formatLong from './_lib/formatLong/index.js';
+import { formatDistance } from "./_lib/formatDistance/index.js";
+import { formatRelative } from "./_lib/formatRelative/index.js";
+import { localize } from "./_lib/localize/index.js";
+import { match } from "./_lib/match/index.js";
+import { formatLong } from "./_lib/formatLong/index.js";
 
 /**
  * @type {Locale}
@@ -13,7 +13,7 @@ import formatLong from './_lib/formatLong/index.js';
  * @iso-639-2 gla
  * @author Alexander Krupko [@AlexKrupko]{@link https://github.com/AlexKrupko}
  */
-const locale: Locale = {
+export const ga: Locale = {
     code: 'ga-IE',
     formatDistance,
     formatLong,
@@ -26,4 +26,3 @@ const locale: Locale = {
     },
 };
 
-export default locale;

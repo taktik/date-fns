@@ -133,7 +133,7 @@ const ordinalNumber: LocalizeFn<number> = (dirtyNumber) =>
     return number + output;
 };
 
-const localize: Localize = {
+export const localize: Localize = {
     ordinalNumber,
 
     era: buildLocalizeFn({
@@ -165,4 +165,3 @@ const localize: Localize = {
     }),
 };
 
-export default localize;
