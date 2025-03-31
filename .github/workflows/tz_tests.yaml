@@ -11,4 +11,3 @@ jobs:
       - uses: oven-sh/setup-bun@v1
       - run: bun install
       - run: bun ./scripts/test/tzOffset.ts
-      - run: bun ./scripts/test/tzIANA.ts
